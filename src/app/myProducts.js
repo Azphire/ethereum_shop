@@ -212,7 +212,7 @@ App = {
     evaluate: async function () {
         console.log("nimade");
         var content = $("#content").val();
-        if (content == '') content = '对方很高冷,什么也没有说......';
+        if (content == '') content = '没有留言';
         store.deployed().then(function (storeInstance) {
             storeInstance.evaluate(evaluateId, evaluateScore, content, {
                 from: web3.eth.accounts[0],

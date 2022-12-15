@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="基于区块链的购物商店">
+  <meta name="description" content="基于区块链的虚拟交易平台">
   <meta name="keywords" content="区块链，购物商店">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
-  <title>残剑购物商店</title>
+  <title>同心链虚拟商城</title>
   <link href="images/icon.png" rel="shortcut icon">
   <link rel="stylesheet" type="text/css" href="css/common.css"/>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -32,7 +32,7 @@
       <!--顶部导航-->
       <div class="safe">
         <span class="safe-img"></span>
-        <span>专业打造目前国内最安全、便捷的商品交易平台！</span>
+        <span>同心链虚拟商城，安全便捷的虚拟商品交易平台</span>
       </div>
 
       <!--我的代币-->
@@ -40,7 +40,7 @@
         <h5>商城代币</h5>
         <table class="table table-bordered">
           <tr>
-            <td>合约购物币 (GWB)</td>
+            <td>合约同心币 (TXB)</td>
             <td id="all_gwb">100000 / 100000</td>
           </tr>
           <tr>
@@ -48,10 +48,10 @@
             <td id="all_eth">0</td>
           </tr>
         </table>
-        <h5>我的代币</h5>
+        <h5>我的钱包</h5>
         <table class="table table-bordered">
           <tr>
-            <td>我的购物币 (GWB)</td>
+            <td>我的同心币 (TXB)</td>
             <td id="my_gwb">0</td>
           </tr>
           <tr>
@@ -60,21 +60,21 @@
           </tr>
         </table>
         <p>兑换比例: </p>
-        <p>1 GWB = <samp id="rate1" style="color: #f00">0.1</samp> ETH</p>
-        <p>1 ETH = <samp id="rate2" style="color: #f00">10</samp> GWB</p>
+        <p>1 TXB = <samp id="rate1" style="color: #f00">0.1</samp> ETH</p>
+        <p>1 ETH = <samp id="rate2" style="color: #f00">10</samp> TXB</p>
       </div>
 
       <!--发布任务-->
       <div style="position: absolute;text-align: center;left: 800px;top: 200px;">
         <div class="row">
-          <label>买入购物币: </label>
-          <input type="text" id="buy_gwb"> GWB = <samp id="buy_eth" style="color: #f00;">0.000</samp> ETH
+          <label>买入同心币: </label>
+          <input type="text" id="buy_gwb"> TXB = <samp id="buy_eth" style="color: #f00;">0.000</samp> ETH
           <button class="btn btn-xs btn-green" onclick="App.buy()" style="margin-left: 50px">兑 换</button>
           <span id="tip_buy"> </span>
         </div>
         <div class="row">
-          <label>卖出购物币: </label>
-          <input type="text" id="sell_gwb"> GWB = <samp id="sell_eth" style="color: #f00;">0.000</samp> ETH
+          <label>卖出同心币: </label>
+          <input type="text" id="sell_gwb"> TXB = <samp id="sell_eth" style="color: #f00;">0.000</samp> ETH
           <button class="btn btn-xs btn-green" onclick="App.sell()" style="margin-left: 50px">兑 换</button>
           <span id="tip_sell"> </span>
         </div>

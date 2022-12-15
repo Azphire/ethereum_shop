@@ -65,7 +65,7 @@ App = {
             num_edge_entries: 1 // 两侧显示的首尾分页的条目数
         });
         if(searchList.length==0){
-            alert("没有找到该商品信息，请您换个搜索关键词( ˶‾᷄࿀‾᷅˵ )");
+            alert("没有找到该商品信息，请您换个搜索关键词");
         }
     },
 
@@ -97,7 +97,7 @@ App = {
             num_edge_entries: 1 // 两侧显示的首尾分页的条目数
         });
         if(searchList.length==0){
-            alert("暂时没有相关类型的产品( ˶‾᷄࿀‾᷅˵ )");
+            alert("暂时没有相关类型的产品");
         }
     },
 

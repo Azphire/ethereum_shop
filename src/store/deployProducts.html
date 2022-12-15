@@ -4,11 +4,11 @@
     <base href="../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="基于区块链的购物商店">
+    <meta name="description" content="基于区块链的虚拟交易平台">
     <meta name="keywords" content="区块链，购物商店">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="format-detection" content="telephone=no">
-    <title>残剑购物商店</title>
+    <title>同心链虚拟商城</title>
     <link href="images/icon.png" rel="shortcut icon">
     <link rel="stylesheet" type="text/css" href="css/common.css"/>
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -49,7 +49,7 @@
             <div class="center-block" style="background-color: #fff;width: 600px;padding: 50px 0;margin: 50px auto;">
                 <form class="form-horizontal" id="form">
                     <div class="form-group">
-                        <label for="name" class="col-xs-4 control-label">商品: </label>
+                        <label for="name" class="col-xs-4 control-label">商品名称: </label>
                         <div class="col-xs-5">
                             <input type="text" name="name" id="name" class="form-control input-sm duiqi"
                                    style="margin-top: 7px;">
@@ -60,12 +60,12 @@
                         <div class="col-xs-5">
                             <select name="style" id="style" class="form-control input-xs select-duiqi"
                                     style="margin-top: 10px;">
-                                <option value="照片" style="color:#000000;">照片</option>
-                                <option value="电影" style="color:#000000;">电影</option>
+                                <option value="绘画" style="color:#000000;">绘画</option>
+                                <option value="摄影" style="color:#000000;">摄影</option>
                                 <option value="音乐" style="color:#000000;">音乐</option>
-                                <option value="程序" style="color:#000000;">程序</option>
+                                <option value="视频" style="color:#000000;">视频</option>
                                 <option value="文章" style="color:#000000;">文章</option>
-                                <option value="书籍" style="color:#000000;">书籍</option>
+                                <option value="设计" style="color:#000000;">设计</option>
                             </select>
                         </div>
                     </div>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="rules" class="col-xs-4 control-label">使用: </label>
+                        <label for="rules" class="col-xs-4 control-label">使用限制: </label>
                         <div class="col-xs-5">
                             <textarea rows="5" name="rules" id="rules" class="form-control input-sm duiqi"></textarea>
                             <span class="error"></span> <!-- error字数限制 -->
@@ -94,8 +94,7 @@
                         <label for="cover" class="col-xs-4 control-label">封面: </label>
                         <div class="col-xs-5">
                             <!--upload-->
-                            <input type="file" name="cover" id="cover" accept="image/*">(jpg, png, bmp)
-                            <a id="tip_cover" target='_blank' href='https://github.com/wongnoubo'> </a>
+                            <input type="file" name="cover" id="cover" accept="image/*">
                         </div>
                     </div>
                     <div class="form-group">
@@ -103,7 +102,6 @@
                         <div class="col-xs-5">
                             <!--upload-->
                             <input type="file" name="file" id="file">
-                            <a id="tip_file" target='_blank' href='https://github.com/wongnoubo'> </a>
                         </div>
                     </div>
                     <div class="form-group">
