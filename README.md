@@ -108,7 +108,7 @@ ipfs init
 $ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '["PUT", "GET", "POST", "OPTIONS"]'<br />$ ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '["*"]'<br /><br /><br />windows配置跨域资源共享CORS<br />ipfs config --json API.HTTPHeaders.Access-Control-Allow-Methods '[\"PUT\", \"GET\", \"POST\", \"OPTIONS\"]'<br /><br /><br />ipfs config --json API.HTTPHeaders.Access-Control-Allow-Origin '[\"*\"]'<br /><br />
 * 启动ipfs服务
 
-$ ipfs deamon
+$ ipfs daemon
 
 * 浏览器访问IPFS节点
 
@@ -169,7 +169,7 @@ http://localhost:5001/webui
 ## 4 项目运行
 * 启动IPFS
 
-ipfs deamon
+ipfs daemon
 * 启动ganache
 
 ./ganache<br />windows就直接双击ganahce.exe即可。
