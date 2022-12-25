@@ -25,6 +25,7 @@ App = {
 
     getBalanceInfo: async function () {
         var result = await App._getBalanceInfo();
+        console.log(result)
         window.all_gwb = result[2].toNumber();
         var all_eth = (web3.fromWei(result[3])).toFixed(3);
         window.my_gwb = result[4].toNumber();
@@ -38,9 +39,11 @@ App = {
         $("#rate2").html((1 / rate).toFixed(3));
     },
 
-    buy: function () {
+    buy: async function () {
         $("#tip_buy").html('正在买入......');
         var num = $("#buy_gwb").val(); // 买入的购物币
+        const enable = await ethereum.enable();
+        console.log(enable,11)
         store.deployed().then(function (storeInstance) {
             storeInstance.buy({
                 from: web3.eth.accounts[0],//当前取默认账号的第一个地址

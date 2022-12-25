@@ -39,7 +39,7 @@ App = {
         window.productList = resultList;
         window.totalNum = resultList.length;
        if(totalNum==0){
-           alert("没有找到该商品信息，请您换个搜索关键词( ˶‾᷄࿀‾᷅˵ )");
+           alert("没有找到该商品信息，请您换个搜索关键词");
        }
         $("#pagination").pagination(totalNum, {
             callback: App.pageCallback,
@@ -72,7 +72,7 @@ App = {
     window.productList = resultList;
     window.totalNum = resultList.length;
     if(totalNum==0){
-        alert("没有找到该商品信息，请您换个搜索关键词( ˶‾᷄࿀‾᷅˵ )");
+        alert("没有找到该商品信息，请您换个搜索关键词");
     }
     $("#pagination").pagination(totalNum, {
         callback: App.pageCallback,
@@ -148,7 +148,7 @@ App = {
                 + '<span class="label label-info">简介</span>'
                 + '<samp id="intro">' + result[3].substr(0, 20) + '......</samp>'
                 + '<br/>'
-                + '<span class="label label-info">玩法</span>'
+                + '<span class="label label-info">使用限制</span>'
                 + '<samp id="rules">' + result[4].substr(0, 20) + '......</samp>'
                 + '<div align="center">'
                 + '<button class="btn btn-danger btn-xs" onclick="App.start(' + productList[i] + ')">获取商品</button>'

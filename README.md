@@ -189,6 +189,11 @@ npm run dev<br />会自动打开浏览器通过localhost:3000访问
 
 
 <a name="8382c147"></a>
+
+- Metamask
+
+  每次重启Ganache都需要重置Metamask账户
+
 ## 5 参考资料
 * [游戏交易系统](https://github.com/littleredhat1997/Egame)
 * [truffle官方教程宠物商店](https://truffleframework.com/tutorials/pet-shop)
