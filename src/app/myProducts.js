@@ -88,7 +88,14 @@ App = {
 
     getPurchasedProducts: async function () {
         var result = await App._getPurchasedProducts();
-        window.productList = result;
+        var tempNum = result.length;
+        var resultList = new Array();
+        var start = 0;
+
+        for(var i = start; i < tempNum; i++){
+            resultList.push(result[i].c[0]);
+        }
+        window.productList = resultList;
         window.totalNum = result.length;
         $("#pagination").pagination(totalNum, {
             callback: App.pageCallback,
@@ -104,7 +111,14 @@ App = {
 
     getPublishedProducts: async function () {
         var result = await App._getPublishedProducts();
-        window.productList = result;
+        var tempNum = result.length;
+        var resultList = new Array();
+        var start = 0;
+
+        for(var i = start; i < tempNum; i++){
+            resultList.push(result[i].c[0]);
+        }
+        window.productList = resultList;
         window.totalNum = result.length;
         $("#pagination").pagination(totalNum, {
             callback: App.pageCallback,
@@ -233,7 +247,7 @@ App = {
     _getPurchasedProducts: function () {
         return new Promise(function (resolve, reject) {
             store.deployed().then(function (storeInstance) {
-                storeInstance.getPurchasedProducts.call().then(function (result) {
+                storeInstance.getPurchasedProducts().then(function (result) {
                     resolve(result);
                 }).catch(function (err) {
                     alert("内部错误: " + err);
@@ -245,7 +259,7 @@ App = {
     _getPublishedProducts: function () {
         return new Promise(function (resolve, reject) {
             store.deployed().then(function (storeInstance) {
-                storeInstance.getPublishedProducts.call().then(function (result) {
+                storeInstance.getPublishedProducts().then(function (result) {
                     resolve(result);
                 }).catch(function (err) {
                     alert("内部错误: " + err);
@@ -260,7 +274,7 @@ App = {
                 storeInstance.getProductInfo.call(id).then(function (result) {
                     resolve(result);
                 }).catch(function (err) {
-                    alert("内部错误: " + err);
+                    alert("getProductInfo内部错误: " + err);
                 });
             });
         });
@@ -272,7 +286,7 @@ App = {
                 storeInstance.getProductFile.call(id).then(function (result) {
                     resolve(result);
                 }).catch(function (err) {
-                    alert("内部错误: " + err);
+                    alert("getProductFile内部错误: " + err);
                     window.location.reload();
                 });
             });
@@ -285,7 +299,7 @@ App = {
                 storeInstance.isEvaluated.call(id).then(function (result) {
                     resolve(result);
                 }).catch(function (err) {
-                    alert("内部错误: " + err);
+                    alert("isEvaluated内部错误: " + err);
                     window.location.reload();
                 });
             });

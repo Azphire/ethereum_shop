@@ -1,4 +1,4 @@
-pragma solidity >=0.4.22 <0.6.0;
+pragma solidity >0.5.0;
 // 代币系统
 contract Token {
     uint tokenTotal;    // 代币总和
